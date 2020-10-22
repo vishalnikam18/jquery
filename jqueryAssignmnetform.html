@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script  src="./jquery-3.5.1.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="//geodata.solutions/includes/statecity.js"></script>   
+    <link rel="stylesheet" href="./jqueryAssignmentForm.css">
+    <script src="./jqueryAssignment.js"></script>
+</head>
+<body>
+    <h1>Registraion Form</h1>
+    <form>
+    <table>
+        <tr>
+            <td>
+                Enter your Name :
+            </td>
+            <td>
+                <input type="text" required placeholder="Smith" autofocus>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter your Email :
+            </td>
+            <td>
+                <input type="email" required placeholder="smith@company.com" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Enter your username :
+            </td>
+            <td>
+                <input id="uname" type="text" pattern="[a-z]{1,15}" required>
+            </td>
+            <td>
+                <div id="username"></div>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Enter the Mobile Number :</td>
+            <td><input type="tel" pattern="[1-9]+[0-9]{9} required" maxlength="10"/></td>
+        </tr>
+
+        <tr>
+
+            <td>
+                Enter a password :
+            </td>
+            <td>
+                <input id="pass" type="password" required>
+            </td>
+            <td>
+                <input id="shw" type="checkbox" >Show Password
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Confirm Password :
+            </td>
+            <td>
+                <input id="cpass" type="password" required> 
+            </td>
+            <td>
+                <div id="cpass1"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Skills :
+            </td>
+            <td>
+                <input type="text" placeholder="Skills.." id="myInput">
+                <div id="skill">
+                    <a href="#">coding</a>
+                    <a href="#">logical thinking</a>
+                    <a href="#">swimming</a>
+                    <a href="#">running</a>
+                    <a href="#">driving</a>
+                    <a href="#">cycling</a>
+                </div>
+            </td>   
+        </tr>
+        <tr>
+            <td>
+                Enter your State & City :
+            </td>
+            <td>
+                <input type="hidden" name="country" id="countryId" value="IN"/>
+                <select name="state" class="states order-alpha" id="stateId">
+                    <option value="">Select State</option>
+                </select>
+                <select name="city" class="cities order-alpha" id="cityId">
+                    <option value="">Select City</option>
+                </select>
+
+
+            </td>
+        </tr>
+        <tr>
+            <trd></trd>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
